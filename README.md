@@ -50,8 +50,8 @@ A 2x3 grid mapping out the exact classification distribution (True vs. Predicted
 To bridge the gap between deep learning and forensic medicine, we injected PyTorch hook systems into the final block of **ConvNeXt-V2** to map visual attention grids.
 ![Grad-CAM Visualizations](grad_cam.png)
 
-* **Entrance Wound Analysis:** The model precisely targets the **Abrasion Collar (찰과륜)** surrounding the wound margin, showing deep alignment with standard medical textbook definitions.
-* **Exit Wound Analysis:** The attention grid highlights the irregular, **Lacerated Margins (파열연)** and structural skin flaps, proving that the model relies on true morphological features rather than background noise.
+* **Entrance Wound Analysis:** The model precisely targets the **Abrasion Collar** surrounding the wound margin, showing deep alignment with standard medical textbook definitions.
+* **Exit Wound Analysis:** The attention grid highlights the irregular, **Lacerated Margins** and structural skin flaps, proving that the model relies on true morphological features rather than background noise.
 
 ---
 
@@ -62,6 +62,3 @@ To bridge the gap between deep learning and forensic medicine, we injected PyTor
 * scikit-learn, matplotlib, seaborn, opencv-python
 
 ---
-
-## 📜 Future Works: Phase 2
-Building upon this solid benchmark registry, the next iteration expands into **Multimodal Frameworks (CLIP)** to integrate structured autopsy text reports with gross pathology imagery for zero-shot forensic intelligence.
