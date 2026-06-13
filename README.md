@@ -52,14 +52,14 @@ Six diverse deep learning backbones were trained and optimized using dynamic ima
 ## 📊 Benchmarking Performance Metrics
 Below is the definitive performance matrix compiled at the best-performing training epochs across all architectures:
 
-| Model Name | Accuracy | Precision | Recall (Sensitivity) | F1-Score | ROC-AUC | Best Epoch |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ConvNeXt-V2-Tiny** | **0.835** | **0.842** | **0.825** | **0.8334** | **0.8918** | **3** |
-| DINOv2-Small | 0.829 | 0.775 | 0.762 | 0.7686 | 0.8884 | 16 |
-| Swin-Tiny | 0.821 | 0.815 | 0.830 | 0.8224 | 0.8800 | 4 |
-| ViT-Small | 0.805 | 0.798 | 0.815 | 0.8064 | 0.8576 | 3 |
-| ResNet50 | 0.811 | 0.824 | 0.798 | 0.8108 | 0.8526 | 15 |
-| EfficientNet-B0 | 0.742 | 0.731 | 0.762 | 0.7462 | 0.7940 | 20 |
+| Rank | Model Name | Model Type | Accuracy | Precision | Recall (Sensitivity) | F1-Score | ROC-AUC | Best Epoch |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 🥇 **1** | **ConvNeXt-V2-Tiny** | Modernized CNN | **0.835** | **0.842** | **0.825** | **0.8334** | **0.8918** | **3** |
+| 🥈 **2** | DINOv2-Small | Self-Supervised ViT | 0.829 | 0.775 | 0.762 | 0.7686 | 0.8884 | 16 |
+| 🥉 **3** | Swin-Tiny | Hierarchical ViT | 0.821 | 0.815 | 0.830 | 0.8224 | 0.8800 | 4 |
+| 🏅 **4** | ResNet50 | Standard CNN | 0.811 | 0.824 | 0.798 | 0.8108 | 0.8526 | 15 |
+| 🏅 **5** | ViT-Small | Standard ViT | 0.805 | 0.798 | 0.815 | 0.8064 | 0.8576 | 3 |
+| 🏅 **6** | EfficientNet-B0 | Light-weight CNN | 0.742 | 0.731 | 0.762 | 0.7462 | 0.7940 | 20 |
 
 ### 🔑 Key Takeaways
 1. **ConvNeXt-V2-Tiny** achieved the highest overall performance with an **Accuracy of 83.5%** and a dominant **ROC-AUC of 0.8918**, proving the massive potential of modernized ConvNets in specialized clinical/forensic tasks.
