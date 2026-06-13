@@ -81,12 +81,12 @@ The Receiver Operating Characteristic (ROC) curves illustrate the true-positive 
 A 2x3 grid mapping out the exact classification distribution (True vs. Predicted Labels) for each model. Cell values display raw counts alongside percentage ratios to show exact directional error tendencies.
 ![Confusion Matrices](confusion_matrix.png)
 
-### 4. Explainable AI (XAI): Grad-CAM Spatial Heatmaps
-To bridge the gap between deep learning and forensic medicine, we injected PyTorch hook systems into the final block of **ConvNeXt-V2** to map visual attention grids.
+### 4. Explainable AI (XAI): Visualizing AI Diagnostic Focus (Grad-CAM)
+To guarantee that the AI is relying on genuine pathological features rather than random noise, we generated Grad-CAM visual heatmaps. This technique highlights the exact pixels and regions our top model (**ConvNeXt-V2**) focused on when making its final classification.
 ![Grad-CAM Visualizations](grad_cam.png)
 
-* **Entrance Wound Analysis:** The model precisely targets the **Abrasion Collar** surrounding the wound margin, showing deep alignment with standard medical textbook definitions.
-* **Exit Wound Analysis:** The attention grid highlights the irregular, **Lacerated Margins** and structural skin flaps, proving that the model relies on true morphological features rather than background noise.
+* **Entrance Wound Analysis:** The model precisely targets the **Abrasion Collar** surrounding the wound margin. This high-density focus perfectly mirrors the standard diagnostic criteria found in forensic medicine textbooks.
+* **Exit Wound Analysis:** The visual heatmaps shift away from neat borders and highlight the irregular, **Lacerated Margins** and structural skin flaps, proving that the model relies on true morphological features to make an objective determination.
 
 ---
 
